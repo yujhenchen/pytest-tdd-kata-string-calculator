@@ -1,3 +1,13 @@
+import sys
+
+
 class StringCalculator:
-    def __init__(self) -> None:
-        pass
+
+    """
+    The method can take up to two numbers,
+    separated by commas, and will return their sum as a result.
+    So the inputs can be: “”, “1”, “1,2”. For an empty string, it will return 0
+    """
+
+    def add(self, string: str) -> int:
+        return -sys.maxsize - 1

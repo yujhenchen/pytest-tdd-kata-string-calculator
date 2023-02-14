@@ -2,7 +2,7 @@ import unittest
 
 
 class TestStringCalculator(unittest.TestCase):
-    def test_something(self):
+    def test_something(self) -> None:
         pass
 
 
