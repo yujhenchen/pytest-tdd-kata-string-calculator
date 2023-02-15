@@ -41,6 +41,9 @@ class TestStringCalculator(unittest.TestCase):
 
     def test_two_numbers_return_5(self) -> None:
         self.assertEqual(5, self.stringCalculator.add("2,3"))
+        
+    def test_two_numbers_include_negative_return_1(self) -> None:
+        self.assertEqual(1, self.stringCalculator.add("-2,3"))
 
 
 if __name__ == "__main__":
