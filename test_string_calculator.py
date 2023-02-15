@@ -20,9 +20,15 @@ Exception: invalid iput, mix: "4,bc"
 
 
 class TestStringCalculator(unittest.TestCase):
+    def setUp(self) -> None:
+        self.stringCalculator = StringCalculator()
+        return super().setUp()
+
     def test_return_0(self) -> None:
-        stringCalculator = StringCalculator()
-        self.assertEqual(0, stringCalculator.add(""))
+        self.assertEqual(0, self.stringCalculator.add(""))
+
+    def test_no_number_return_0(self) -> None:
+        self.assertEqual(0, self.stringCalculator.add(","))
 
 
 if __name__ == "__main__":
