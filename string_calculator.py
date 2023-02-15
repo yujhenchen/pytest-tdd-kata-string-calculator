@@ -10,6 +10,6 @@ class StringCalculator:
     """
 
     def add(self, string: str) -> int:
-        if string == "1":
-            return 1
+        if string.isnumeric():
+            return int(string)
         return 0
