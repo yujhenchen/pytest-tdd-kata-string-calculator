@@ -10,6 +10,7 @@ class StringCalculator:
     """
 
     def add(self, string: str) -> int:
-        if string.isnumeric():
+        str_processed = string.replace(",", "")
+        if str_processed.isnumeric():
             return int(string)
         return 0
