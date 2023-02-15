@@ -32,6 +32,9 @@ class TestStringCalculator(unittest.TestCase):
 
     def test_return_1(self) -> None:
         self.assertEqual(1, self.stringCalculator.add("1"))
+        
+    def test_prefix_return_1(self) -> None:
+        self.assertEqual(1, self.stringCalculator.add(",1"))
 
 
 if __name__ == "__main__":
