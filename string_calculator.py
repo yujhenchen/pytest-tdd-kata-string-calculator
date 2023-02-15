@@ -10,4 +10,4 @@ class StringCalculator:
     """
 
     def add(self, string: str) -> int:
-        return -sys.maxsize - 1
+        return 0
