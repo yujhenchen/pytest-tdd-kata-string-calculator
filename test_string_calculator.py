@@ -30,6 +30,9 @@ class TestStringCalculator(unittest.TestCase):
     def test_no_number_return_0(self) -> None:
         self.assertEqual(0, self.stringCalculator.add(","))
 
+    def test_return_1(self) -> None:
+        self.assertEqual(1, self.stringCalculator.add("1"))
+
 
 if __name__ == "__main__":
     unittest.main()
