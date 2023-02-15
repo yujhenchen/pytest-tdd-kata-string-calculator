@@ -16,9 +16,6 @@ class StringCalculator:
             if s.isnumeric():
                 sum += int(s)
         return sum
-        # if self.get_processed_str(string).isnumeric():
-        #     return int(str_processed)
-        # return 0
 
     def get_processed_str(self, string) -> list:
         str_ls = string.split(",")

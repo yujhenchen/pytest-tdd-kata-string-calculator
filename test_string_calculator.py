@@ -30,13 +30,13 @@ class TestStringCalculator(unittest.TestCase):
     def test_no_number_return_0(self) -> None:
         self.assertEqual(0, self.stringCalculator.add(","))
 
-    def test_return_1(self) -> None:
+    def test_one_number_return_1(self) -> None:
         self.assertEqual(1, self.stringCalculator.add("1"))
 
-    def test_prefix_return_1(self) -> None:
+    def test__one_number_prefix_return_1(self) -> None:
         self.assertEqual(1, self.stringCalculator.add(",1"))
 
-    def test_postfix_return_1(self) -> None:
+    def test__one_number_postfix_return_1(self) -> None:
         self.assertEqual(1, self.stringCalculator.add("1,"))
 
     def test_two_numbers_return_5(self) -> None:
